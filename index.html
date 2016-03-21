@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+
+		<!-- this makes the page mobile-friendly -->
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+
+		<!-- this controls what appears in the browser tab -->
+		<title>title goes here</title>
+
+		<!-- this loads the styles.css file... -->
+		<link rel='stylesheet' href='styles.css'>
+		<link rel='stylesheet' href='files/fonts/grinched/stylesheet.css'>
+		<link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div class='viewport'>
+			<section class='intro'>
+				<img src='files/title.jpg'>
+			</section>
+
+			<section data-page='1' style='background-image: url(files/1.jpg)'>
+				<div class='text bottom'>
+					<p>
+						The sun did not shine.<br>
+						It was too wet to play.<br>
+						So we sat in the house<br>
+						All that cold, cold, wet day.
+					</p>
+				</div>
+			</section>
+
+			<section data-page='2' style='background-image: url(files/2.jpg)'>
+				<div class='text top'>
+					<p>
+						I sat there with Sally.<br>
+						We sat there, we two.<br>
+						And I said, "How I wish<br>
+						We had something to do!"
+					</p>
+
+					<p>
+						Too wet to go out<br>
+						And too cold to play ball.<br>
+						So we sat in the house.<br>
+						We did nothing at all.
+					</p>
+				</div>
+			</section>
+
+			<section data-page='3' style='background-image: url(files/3.jpg)'>
+				<div class='text bottom'>
+					<p>
+						So all we could do was to<br>
+						Sit!<br>
+						<span style='position: relative; left: 2em;'>Sit!</span><br>
+						<span style='position: relative; left: 4em;'>Sit!</span><br>
+						<span style='position: relative; left: 6em;'>Sit!</span><br>
+						And we did not like it.<br>
+						Not one little bit.
+					</p>
+				</div>
+			</section>
+
+			<section data-page='4' style='background-image: url(files/4.jpg)'>
+				<strong>say "next page" to continue...</strong>
+				<div class='text hidden'>next page</div>
+			</section>
+
+			<section data-page='5' style='background-image: url(files/5.jpg)'>
+				<div class='text bottom'>
+					<p>
+						And then<br>
+						Something went <span class='caps'>BUMP</span>!<br>
+						How that bump made us jump!
+					</p>
+				</div>
+			</section>
+
+			<section data-page='6' style='background-image: url(files/6.jpg)'>
+				<div class='text bottom'>
+					<p>
+						We looked!<br>
+						Then we saw him step in on the mat!<br>
+						We looked!</br>
+						And we saw him!</br>
+						The Cat in the Hat!</br>
+						And he said to us,</br>
+						"Why do you sit there like that?"
+					</p>
+				</div>
+			</section>
+
+			<section data-page='7' style='background-image: url(files/7.jpg)'>
+				<div class='text bottom'>
+					<p>
+						"I know it is wet<br>
+						And the sun is not sunny<br>
+						But we can have</br>
+						Lots of good fun that is funny!
+					</p>
+				</div>
+			</section>
+
+			<section data-page='8' class='final'>
+				<strong>the end</strong>
+			</section>
+		</div>
+
+		<button id='start'><span>start reading &raquo;</span></button>
+
+		<div class='debug'>
+
+		</div>
+
+		<script src='node_modules/jquery/dist/jquery.min.js'></script>
+		<script src='node_modules/blast-text/jquery.blast.min.js'></script>
+		<script src='node_modules/fast-levenshtein/levenshtein.js'></script>
+
+		<script src='app.js'></script>
+	</body>
+</html>
